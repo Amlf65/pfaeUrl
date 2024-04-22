@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mundo Informatico</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      body{
+         background-color: #91DEE3;
+         width: 90%;
+         margin: auto;
+      }
+
+      li{
+         font-size: 1.5rem;
+         list-style: none;
+      }
+      #buscar{
+         margin: 1rem 0;
+         
+      }
+      input {
+         padding: 5px;
+         width: 70%;
+         background: white url("lupa.svg") no-repeat right ;
+      }
+      button {
+         width: 26%;
+         padding: 5px;
+         background-color: #243986;
+         color:white;
+         border-radius: 25px;
+         text-align: center;
+         overflow: hidden;
+      }
+      section{
+         width: 100%;
+         display: flex;
+         flex-direction:column;
+         justify-content: center;
+         gap: .5rem;
+      }
+      img{
+         width: 100%;
+      }
+      p{
+         font-size: 1.3rem;
+      }
+      iframe {
+         border:0; 
+         margin: 1rem 0;
+         width: 100%; 
+         height: 200px;
+      }
+   
+   @media screen and (min-width:480px) and (max-width:768px){
+     header{
+         width: 40%;
+         float: left;
+      }
+      #buscar {
+         position: absolute;
+         top:0;
+         right: 0;
+         width: 40%;
+      }
+      ul{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         position:relative;
+         top:1rem;
+         width: 100%;
+         margin: 2rem 0;
+      }
+      li{
+         display: inline;
+      }
+      section{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 2rem;
+      }
+      footer, iframe {
+         width: 40%;
+      }
+      footer{
+         float: left;
+         width: 40%;
+      }
+      iframe {
+         float: right;
+         width: 55%; 
+      }
+
+
+   }
+   @media screen and (min-width:769px){
+      header{
+         width: 30%;
+         float: left;
+         margin-right: 1rem;
+      }
+      
+      #buscar {
+         position: absolute;
+         top:0;
+         right: 0;
+         width: 30%;
+      }
+      ul{
+         width: 35%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         margin: 1rem 2rem;
+         gap:.6rem
+      }
+      li{
+         display: inline;font-size: 1.1rem;margin-top: 1rem ;
+      }
+      section{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         gap: 2rem;
+      }
+      footer, iframe {
+         width: 40%;
+      }
+      footer{
+         margin-top: 2rem;
+         float: left;
+         width: 40%;
+      }
+      iframe {
+         float: right;
+         width: 55%; 
+      }
+   }
+   </style>
+</head>
+<body>
+   <header>
+      <img src="cabecera.svg" alt="">   
+   </header>
+   <nav>
+      <ul>
+         <li>Torres</li>
+         <li>Pantallas</li>
+         <li>Impresoras</li>
+         <li>Scanners</li>
+      </ul>
+   </nav>
+   <div id="buscar">
+      <input type="text" name="" id="">
+      <button>Buscar</button>
+   </div>
+   <section>
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+      <img src="Ficha.svg" alt="">
+   </section>
+   <footer>
+      <div>
+         <p>Mundo Informático</p>
+         <p>Juan Diego de la Fuente, 40</p>
+         <p>35200 Telde</p>
+         <p>pfaeurl@telde.es</p>
+      </div>
+   </footer>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3184.2485973073854!2d-15.416900754733222!3d27.995239661244028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1713565841531!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
